@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link rel="shortcut icon" href="">
+
+<!-- bootstrap css start  -->
+<link rel="stylesheet" href="css/bootstrap.css">	
+<link rel="stylesheet" href="css/bootstrap-theme.css">
+<!-- bootstrap css end  -->
+
+
+
+<!-- common css start  -->
+<link rel="stylesheet" href="css/error-message.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- common css end  -->
+
+<!-- specific for this page css start  -->
+
+<!-- specific for this page css start  -->
+
+
+<!-- important initialization js files start -->
+<script src="js/jquery-2.1.3.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/index.js"></script>
+
+<!-- important initialization js files end -->
+
+
+ 
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-fixed-top navbar-custom"> 
+	<ul class="nav  brand-nav"> </ul> <!-- nav for brand --> 
+
+	<ul class="nav-ul-container nav">
+		<div class="container">
+			
+
+			<ul class="nav navbar-nav navbar-left" id="navUlContainer1"> 
+					<li class="nav-clickable"><a href="#"><span><i class="glyphicon glyphicon-home"></i></span> HOME</a></li>
+					<li class="nav-clickable"><a href="#"><span><i class="glyphicon glyphicon-search"></i></span> SEARCH</a></li>
+					<li class="nav-clickable"><a href="#"><span><i class="glyphicon glyphicon-transfer"></i></span> COMPARE</a></li>
+			
+			 </ul>
+
+
+
+
+
+			  <ul class="nav navbar-nav navbar-right" id="navUlContainer2"> 
+			  	<li id="navSignInBtnLi"><button id="navSignInBtn" class="btn btn-success" data-toggle="modal" data-target="#signInModal">LOGIN</button></li>
+			  	<li class="logged-in-feature"><label id="welcomeLabel" class="navbar-text">Welcome, <a href="#" id="usersName">HENRY JOHN MARTIN</a></label>
+			  			<button class=" btn dropdown-toggle caret" type="button" id="userMenuBtn" data-toggle="dropdown" aria-expanded="true">
+						<span class=""><i class="caret"></i></span>
+				  </button>
+
+				  <ul class="dropdown-menu" role="menu">
+		            <li class="nav-clickable"><a href="#"><span><i class="glyphicon glyphicon-envelope"></i></span> REQUEST CONDO</a></li>
+                <li class="nav-clickable"><a href="#"><span><i class="glyphicon glyphicon-plus"></i></span> ADD UNIT</a></li>
+                <li class="nav-clickable"><a href="#"><span><i class="glyphicon glyphicon-list-alt"></i></span> MANAGE UNIT/S</a></li>
+                <li class="nav-clickable"><a href="#"><span><i class="glyphicon glyphicon-pencil"></i></span> EDIT PROFILE</a></li>
+                <li class="nav-clickable"><a href="#"><span><i class="glyphicon glyphicon-log-out"></i></span> LOGOUT</a></li>
+		    
+		            <!-- <li class="divider"></li> -->
+
+		          </ul>
+
+			  	</li>
+		
+			 </ul>
+		</div>
+	</ul>
+
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container mainContainer">
+	<div class="row rowContainer">
+
+
+		<div class="row" id="welcomeRow"> 
+			<h1>WELCOME!</h1>
+		</div>
+
+		<div class="row">
+	
+			<div id="featuredGroup" class="col-md-12">
+				<h2 class="col-md-offset-1 col-md-10">FEATURED</h2>
+				<div class="col-md-offset-1 col-md-10">
+								<div id="carousel-example-generic" class="carousel slide col-md-12" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+					  </ol>
+
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner" role="listbox">
+					    <div class="item active">
+					       <a href="#"><img class="img-responsive carousel-img" src="images/test2.gif" alt="..."></a>
+					      <div class="carousel-caption">
+					       	UNIT NAME
+					      </div>
+					    </div>
+					   
+
+					    <div class="item">
+					      <a href="#"><img class="img-responsive carousel-img" src="images/test2.gif" alt="..."></a>
+					      <div class="carousel-caption">
+					       	UNIT NAME
+					      </div>
+					    </div>
+
+					    <div class="item">
+					      <a href="#"><img class="img-responsive carousel-img" src="images/test2.gif" alt="..."></a>
+					      <div class="carousel-caption">
+					       	UNIT NAME
+					      </div>
+					    </div>
+
+					     <div class="item">
+					      <a href="#"><img class="img-responsive carousel-img" src="images/test2.gif" alt="..."></a>
+					      <div class="carousel-caption">
+					       	UNIT NAME
+					      </div>
+					    </div>
+
+					     <div class="item">
+					      <a href="#"><img class="img-responsive carousel-img" src="images/test2.gif" alt="..."></a>
+					      <div class="carousel-caption">
+					       	UNIT NAME
+					      </div>
+					    </div>
+
+					   
+					  </div>
+
+					  <!-- Controls -->
+					  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+				</div>
+
+
+				</div>
+	
+			</div>
+
+
+
+		</div>
+
+	</div>
+	
+	<br>
+	<div class="row" id="newestCondosRow">
+		<div class="col-md-offset-1 col-md-10">
+				<h2 class="col-md-12 brick-header">NEWEST</h2>
+		</div>
+
+		<div class="col-md-offset-1 col-md-10">
+
+			<a class="newCondoDivA" href="">
+			<div class="newCondoPanelDiv col-md-5" id="newCondoPanelDiv1" name="newCondoPanelDiv1">
+				 <div class="panel panel-default">
+					<div class="panel-heading">
+                            <h3 id="newCondoTitle1" name="newCondoTitle1" class="panel-title">UNIT NAME</h3>
+    
+       				</div>
+
+     
+                    <div class="panel-body">
+                    	<div class="col-md-12"><img src="images/test2.gif" id="newCondoImg1" name="newCondoImg1" class="newCondoDisplayImg"></div>
+                    	<div class="col-md-12 fillerCol">fill</div>
+                    	<div class="col-md-12 newCondoDescriptionCol"><p class="newCondoDescriptionP" id="newCondoDescription1" name="newCondoDescription1">CDEDESC</p></div>
+                    <div class="col-md-12"> </div>
+
+					</div>
+
+					<div class="panel-footer">
+						<div class="row">
+						<label class="newCondoPrice col-md-12" id="newCondoPrice1" name="newCondoPrice1" >PHP 1,000,000</label>
+						</div>
+					
+					</div>
+
+				</div>
+			
+		</div>
+		</a>
+
+		<a class="newCondoDivA" href="">
+		<div class="newCondoPanelDiv col-md-offset-1 col-md-5" id="newCondoPanelDiv2" name="newCondoPanelDiv2">
+				 <div class="panel panel-default">
+					<div class="panel-heading">
+                            <h3 id="newCondoTitle2" name="newCondoTitle2" class="panel-title">UNIT NAME</h3>
+    
+       				</div>
+
+     
+                    <div class="panel-body">
+                    	<div class="col-md-12"><img src="images/test2.gif" id="newCondoImg2" name="newCondoImg2" class="newCondoDisplayImg"></div>
+                    	<div class="col-md-12 fillerCol">fill</div>
+                    	<div class="col-md-12 newCondoDescriptionCol"><p class="newCondoDescription2" id="newCondoDescription2" name="newCondoDescription1">TEST</p></div>
+
+                    <div class="col-md-12"> </div>
+
+					</div>
+
+					<div class="panel-footer">
+						<div class="row">
+						<label class="newCondoPrice col-md-12" id="newCondoPrice2" name="newCondoPrice2" >PHP 1,000,000</label>
+						</div>
+					
+					</div>
+
+				</div>
+			
+		</div>
+		</a>
+
+			<a class="newCondoDivA" href="">
+			<div class="newCondoPanelDiv col-md-5" id="newCondoPanelDiv1" name="newCondoPanelDiv1">
+				 <div class="panel panel-default">
+					<div class="panel-heading">
+                            <h3 id="newCondoTitle1" name="newCondoTitle1" class="panel-title">UNIT NAME</h3>
+    
+       				</div>
+
+     
+                    <div class="panel-body">
+                    	<div class="col-md-12"><img src="images/test2.gif" id="newCondoImg1" name="newCondoImg1" class="newCondoDisplayImg"></div>
+                    	<div class="col-md-12 fillerCol">fill</div>
+                    	<div class="col-md-12 newCondoDescriptionCol"><p class="newCondoDescriptionP" id="newCondoDescription1" name="newCondoDescription1">test</p></div>
+                    <div class="col-md-12"> </div>
+
+					</div>
+
+					<div class="panel-footer">
+						<div class="row">
+						<label class="newCondoPrice col-md-12" id="newCondoPrice1" name="newCondoPrice1" >PHP 1,000,000</label>
+						</div>
+					
+					</div>
+
+				</div>
+			
+		</div>
+		</a>
+
+		<a class="newCondoDivA" href="">
+		<div class="newCondoPanelDiv col-md-offset-1 col-md-5" id="newCondoPanelDiv2" name="newCondoPanelDiv2">
+				 <div class="panel panel-default">
+					<div class="panel-heading">
+                            <h3 id="newCondoTitle2" name="newCondoTitle2" class="panel-title">UNIT NAME</h3>
+    
+       				</div>
+
+     
+                    <div class="panel-body">
+                    	<div class="col-md-12"><img src="images/test2.gif" id="newCondoImg2" name="newCondoImg2" class="newCondoDisplayImg"></div>
+                    	<div class="col-md-12 fillerCol">fill</div>
+                    	<div class="col-md-12 newCondoDescriptionCol"><p class="newCondoDescription2" id="newCondoDescription2" name="newCondoDescription1">esttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttestt</p></div>
+
+                    <div class="col-md-12"> </div>
+
+					</div>
+
+					<div class="panel-footer">
+						<div class="row">
+						<label class="newCondoPrice col-md-12" id="newCondoPrice2" name="newCondoPrice2" >PHP 1,000,000</label>
+						</div>
+					
+					</div>
+
+				</div>
+			
+		</div>
+		</a>
+
+			<a class="newCondoDivA" href="">
+			<div class="newCondoPanelDiv col-md-5" id="newCondoPanelDiv1" name="newCondoPanelDiv1">
+				 <div class="panel panel-default">
+					<div class="panel-heading">
+                            <h3 id="newCondoTitle1" name="newCondoTitle1" class="panel-title">UNIT NAME</h3>
+    
+       				</div>
+
+     
+                    <div class="panel-body">
+                    	<div class="col-md-12"><img src="images/test2.gif" id="newCondoImg1" name="newCondoImg1" class="newCondoDisplayImg"></div>
+                    	<div class="col-md-12 fillerCol">fill</div>
+                    	<div class="col-md-12 newCondoDescriptionCol"><p class="newCondoDescriptionP" id="newCondoDescription1" name="newCondoDescription1">test</p></div>
+                    <div class="col-md-12"> </div>
+
+					</div>
+
+					<div class="panel-footer">
+						<div class="row">
+						<label class="newCondoPrice col-md-12" id="newCondoPrice1" name="newCondoPrice1" >PHP 1,000,000</label>
+						</div>
+					
+					</div>
+
+				</div>
+			
+		</div>
+		</a>
+
+		<a class="newCondoDivA" href="">
+		<div class="newCondoPanelDiv col-md-offset-1 col-md-5" id="newCondoPanelDiv2" name="newCondoPanelDiv2">
+				 <div class="panel panel-default">
+					<div class="panel-heading">
+                            <h3 id="newCondoTitle2" name="newCondoTitle2" class="panel-title">UNIT NAME</h3>
+    
+       				</div>
+
+     
+                    <div class="panel-body">
+                    	<div class="col-md-12"><img src="images/test2.gif" id="newCondoImg2" name="newCondoImg2" class="newCondoDisplayImg"></div>
+                    	<div class="col-md-12 fillerCol">fill</div>
+                    	<div class="col-md-12 newCondoDescriptionCol"><p class="newCondoDescription2" id="newCondoDescription2" name="newCondoDescription1">testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttessttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p></div>
+
+             
+
+					</div>
+
+					<div class="panel-footer">
+						<div class="row">
+						<label class="newCondoPrice col-md-12" id="newCondoPrice2" name="newCondoPrice2" >PHP 1,000,000</label>
+						</div>
+					
+					</div>
+
+				</div>
+			
+		</div>
+		</a>
+	
+
+	</div>
+
+
+
+</div>
+
+
+</body>
+
+<!-- js start -->
+<script src="js/bootstrap.min.js"></script>
+<!-- js end -->
+
+
+</html>
+
+
+
+

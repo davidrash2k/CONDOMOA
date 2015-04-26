@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link rel="shortcut icon" href="">
+
+<!-- bootstrap css start  -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="css/bootstrap-theme.css">
+<!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
+<!-- bootstrap css end  -->
+
+
+
+<!-- common css start  -->
+<link rel="stylesheet" href="css/errormessage.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- common css end  -->
+
+<!-- specific for this page css start  -->
+
+<!-- specific for this page css start  -->
+
+
+<!-- important initialization js files start -->
+<script src="js/jquery-2.1.3.js"></script>
+<script src="js/nav.js"></script>
+
+<!-- important initialization js files end -->
+
+
+ 
+</head>
+<body>
+
+
+<nav class="navbar navbar-fixed-top navbar-custom"> 
+	<ul class="nav  brand-nav"> </ul> <!-- nav for brand --> 
+
+	<ul class="nav-ul-container nav">
+		<div class="container">
+			
+
+			<ul class="nav navbar-nav navbar-left" id="navUlContainer1"> 
+					<li class="active nav-clickable "><a href="#"><span><i class="glyphicon glyphicon-home"></i></span> HOME</a></li>
+					<li class="nav-clickable"><a href="#"><span><i class="glyphicon glyphicon-search"></i></span> SEARCH</a></li>
+					<li class="nav-clickable"><a href="#"><span><i class="glyphicon glyphicon-transfer"></i></span> COMPARE</a></li>
+			
+			 </ul>
+
+
+
+
+
+			  <ul class="nav navbar-nav navbar-right" id="navUlContainer2"> 
+			  	<li id="navSignInBtnLi"><button id="navSignInBtn" class="btn btn-success" data-toggle="modal" data-target="#signInModal">LOGIN</button></li>
+			  	<li class="logged-in-feature"><label id="welcomeLabel" class="navbar-text">Welcome, <a href="#" id="usersName">HENRY JOHN MARTIN</a></label>
+			  			<button class=" btn dropdown-toggle caret" type="button" id="userMenuBtn" data-toggle="dropdown" aria-expanded="true">
+						<span class=""><i class="caret"></i></span>
+				  </button>
+
+				  <ul class="dropdown-menu" role="menu">
+		            <li class="nav-clickable"><a href="#"><span><i class="glyphicon glyphicon-envelope"></i></span> REQUEST CONDO</a></li>
+                <li class="nav-clickable"><a href="#"><span><i class="glyphicon glyphicon-plus"></i></span> ADD UNIT</a></li>
+                <li class="nav-clickable"><a href="#"><span><i class="glyphicon glyphicon-list-alt"></i></span> MANAGE UNIT/S</a></li>
+                <li class="nav-clickable"><a href="#"><span><i class="glyphicon glyphicon-pencil"></i></span> EDIT PROFILE</a></li>
+                <li class="nav-clickable"><a href="#"><span><i class="glyphicon glyphicon-log-out"></i></span> LOGOUT</a></li>
+		    
+		            <!-- <li class="divider"></li> -->
+
+		          </ul>
+
+			  	</li>
+		
+			 </ul>
+		</div>
+	</ul>
+
+</nav>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="signInModalLabel">Sign In</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+        	<form class="form-horizontal t2">
+        			<div class="col-md-12">
+                                  <div class="form-group">
+                                     
+                                      <div class="input-group col-md-offset-1 col-md-10">
+                                          <span class="input-group-addon">
+                                              <i class="glyphicon glyphicon-user"></i>
+                                          </span>
+                                          <input type="text" class="form-control" placeholder="Email (ex. email@domain.com)" name="emailInput" id="emailInput"/>
+
+                                      </div>
+
+                                   
+                                         <label class="error-message-label col-md-offset-1 col-md-10" id="email_errorMessage" name="email_errorMessage">Error Message</label>
+              
+
+                                     </div>
+
+                                     <div class="form-group">
+                                     
+                                      <div class="input-group col-md-offset-1 col-md-10">
+                                          <span class="input-group-addon">
+                                              <i class="glyphicon glyphicon-lock"></i>
+                                          </span>
+                                          <input type="text" class="form-control" placeholder="Password" name="passwordInput" id="passwordInput"/>
+
+                                      </div>
+
+                                   
+                                      <label class="error-message-label col-md-offset-1 col-md-10" id="password_errorMessage" name="password_errorMessage">Error Message</label>
+                           
+
+                                     </div>
+                     </div>
+
+                      	
+        	<div class="col-md-12 button-row">
+        		<button class="btn btn-success col-md-offset-4 col-md-4">Sign In</button>
+        		<div class="col-md-12 fillerCol">fill</div>
+        		<label class="col-md-12" >Don't have an account yet? <a href="">Register</a></label>
+        	</div>
+
+        	</form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+</body>
+
+<!-- js start -->
+<script src="js/bootstrap.min.js"></script>
+<!-- js end -->
+
+
+</html>

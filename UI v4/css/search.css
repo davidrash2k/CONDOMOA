@@ -1,0 +1,23 @@
+#skyDiv{
+	width: 1000px;
+	height: 500px;
+}
+
+#searchResultsLabel{
+	font-size: 40px !important;
+}
+
+.showing{
+	font-size: 20px;
+}
+
+
+.resultCondoRow, .resultCondoRow:hover{
+	text-decoration: none;
+	color: black;
+}
+
+
+.resultCondoRow{
+	background-color: white;
+}

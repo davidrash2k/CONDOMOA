@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link rel="shortcut icon" href="">
+
+<!-- bootstrap css start  -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-theme.css">
+
+<!-- bootstrap css end  -->
+
+
+
+<!-- common css start  -->
+<link rel="stylesheet" href="css/style2.css">
+<link rel="stylesheet" href="css/search.css">
+<!-- common css end  -->
+
+<!-- specific for this page css start  -->
+
+<!-- specific for this page css start  -->
+
+
+<!-- important initialization js files start -->
+<script src="js/jquery-2.1.3.js"></script>
+<script src="js/nav.js"></script>
+
+<!-- important initialization js files end -->
+
+
+ 
+</head>
+<body>
+
+
+<div class="container mainContainer">
+ <div id="skyDiv">
+	<div class="row searchRow">
+		<div class="col-md-offset-2 col-md-10 searchCol">
+			<div class="col-md-12">
+				<form class="form-horizontal" id="searchForm" name="searchForm">
+
+					<div class="col-md-12 fillerCol form-group">filler</div>
+					
+
+
+					<div class="form-group">
+		
+						<div class="input-group col-md-offset-3 col-md-6">
+						  <input type="text" class="form-control" placeholder="Search keyword" aria-describedby="searchBtn">
+						  <span class="input-group-btn" id="searchBtn"><button class="btn btn-default" type="button"><span><a href="#searchResultsRow"><i class="glyphicon glyphicon-search"></i></a></span></button></span>
+						</div>		
+					</div>
+				
+				<div class="form-group">
+
+				<div class="col-md-12 filteredSearchBtnCol">
+					<a href="#filteredSearchDiv" data-toggle="collapse" aria-expanded="false" aria-controls="filteredSearchDiv">Filtered Search</a>
+				</div>
+
+				</div>
+				
+
+				</form>
+
+			</div>
+
+			<div class="col-md-12 filteredSearchCol">
+
+				<div class="collapse" id="filteredSearchDiv">
+					<form class="form-horizontal" id="filteredSearchForm" name="filteredSearchForm">
+
+
+				<div class="form-group">
+					<hr class="col-md-offset-1 col-md-10">	
+
+					<div class="col-md-12">	
+										<label class="col-md-offset-2 col-md-2">Price:</label>
+										<div class="col-md-3" >
+											<input id="priceInput1" name="priceInput1" type="text" class="form-control"/>
+										</div>
+										<span class="col-md-1">to</span>
+										<div class="col-md-3" >
+											<input id="priceInput2" name="priceInput2" type="text" class="form-control"/>
+										</div>
+					</div>					
+				</div>
+
+				<div class="form-group">
+					<div class="col-md-12">	
+										<label class="col-md-offset-2 col-md-2">Address:</label>
+										<div class="col-md-7" >
+											<input id="addressInput" name="addressInput" type="text" class="form-control"/>
+										</div>
+										
+					</div>					
+				</div>
+
+				<div class="form-group">
+					<div class="col-md-12">	
+										<label class="col-md-offset-2 col-md-2">Room Area:</label>
+										<div class="col-md-3" >
+											<input id="areaInput" name="areaInput" type="text" class="form-control"/>
+										</div>
+										<label class="col-md-2">Sq. m</label>
+					</div>					
+				</div>
+
+				<div class="form-group">
+					<div class="col-md-12">	
+										<label class="col-md-offset-2 col-md-2">Furnishing:</label>
+										<div class="col-md-4" >
+											<select class="form-control" id="furnishingInput" name="furnishingInput">
+                                                                    <option value="" disabled selected>- Select -</option>
+                                                                    <option value="Furnished">Furnished</option>
+                                                                    <option value="Semi-Furnished">Semi-Furnished</option>
+                                                                     <option value="Unfurnished">Unfurnished</option>
+                                                                  </select>
+										</div>
+
+					</div>					
+				</div>
+
+						
+
+				<div class="form-group">
+
+				<div class="col-md-12 filteredSearchBtnCol">
+
+
+			
+					<a href="#filteredSearchDiv" data-toggle="collapse" aria-expanded="false" aria-controls="filteredSearchDiv">Hide</a>
+
+
+				</div>
+
+				</div>
+
+
+					</form>
+
+				</div>
+
+			</div>
+
+			</div>
+		
+	</div>
+	<!-- <div class="row">
+		<div class="col-md-offset-4 col-md-10 board-pillar"><p class="invisible">!</p></div>
+	</div> -->
+
+	 </div>
+
+ 
+
+	<div class="row searchResultsRow col-md-8 " id="searchResultsRow">
+	
+		<div class="row">
+			<div class="col-md-offset-1 col-md-10">
+				<label class="col-md-offset-1 col-md-11 brick-header" id="searchResultsLabel">SEARCH RESULTS</label>
+			</div>
+			<div class="col-md-offset-1 col-md-10">
+				<label class="col-md-offset-1 col-md-2 brick-header showing" id="showingResultsLabel">Showing</label>
+				<label class="col-md-3 brick-header showing"><span>10 </span><span>out of</span><span> 20</span> results</label>
+				<div class="col-md-12 empty-message-row">
+						<div class="empty-message-white brick-header col-md-12">Nothing to display.</div>
+					</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-offset-1 col-md-10">
+				<div class="row resultRow">
+					<div class="col-md-offset-1 col-md-10 resultCol">
+						
+								<div class="col-md-offset-1 col-md-10">
+									
+											<div class="row resultCondoRow">
+											<a class="resultA" href="#">
+											<div class="row">
+												<div class="col-md-4">
+													<img class="resultCondoDisplayImg imgCol" src="images/test2.gif">
+												</div>
+
+												<div class="col-md-8 resultInfo">
+													<div class="row"> 
+														<div class="col-md-12"><label>UNIT NAME</label></div>
+														<div class="col-md-12"><label>LOCATION</label></div>
+														<div class="col-md-12"><label>PRICE</label></div>
+														<div class="col-md-12"><p class="resultDesc">TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST</p></div>
+													</div>
+												</div>
+
+											</div>
+											</a>
+											</div>
+
+											<br>
+
+												<div class="row resultCondoRow">
+											<a class="resultA" href="#">
+											<div class="row">
+												<div class="col-md-4">
+													<img class="resultCondoDisplayImg imgCol" src="images/test2.gif">
+												</div>
+
+												<div class="col-md-8 resultInfo">
+													<div class="row"> 
+														<div class="col-md-12"><label>UNIT NAME</label></div>
+														<div class="col-md-12"><label>LOCATION</label></div>
+														<div class="col-md-12"><label>PRICE</label></div>
+														<div class="col-md-12"><p class="resultDesc">TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST</p></div>
+													</div>
+												</div>
+
+											</div>
+											</a>
+											</div>
+
+											<br>
+												<div class="row resultCondoRow">
+											<a class="resultA" href="#">
+											<div class="row">
+												<div class="col-md-4">
+													<img class="resultCondoDisplayImg imgCol" src="images/test2.gif">
+												</div>
+
+												<div class="col-md-8 resultInfo">
+													<div class="row"> 
+														<div class="col-md-12"><label>UNIT NAME</label></div>
+														<div class="col-md-12"><label>LOCATION</label></div>
+														<div class="col-md-12"><label>PRICE</label></div>
+														<div class="col-md-12"><p class="resultDesc">TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST</p></div>
+													</div>
+												</div>
+
+											</div>
+											</a>
+											</div>
+			
+
+								</div>
+
+
+							
+					</div>
+								
+								<div class="row paginationRow">
+									<br>
+									<div class="col-md-12 button-row">
+											<nav>
+											  <ul class="pagination">
+											    <li>
+											      <a href="#" aria-label="Previous">
+											        <span aria-hidden="true">&laquo;</span>
+											      </a>
+											    </li>
+											    <li><a href="#">1</a></li>
+											    <li><a href="#">2</a></li>
+											    <li><a href="#">3</a></li>
+											    <li><a href="#">4</a></li>
+											    <li><a href="#">5</a></li>
+											    <li>
+											      <a href="#" aria-label="Next">
+											        <span aria-hidden="true">&raquo;</span>
+											      </a>
+											    </li>
+											  </ul>
+											</nav>
+									</div>
+								</div>
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+
+
+
+
+
+</div>
+
+
+</body>
+
+<!-- js start -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/search.js"></script>
+<!-- js end -->
+
+
+</html>

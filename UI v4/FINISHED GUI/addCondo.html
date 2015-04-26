@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link rel="shortcut icon" href="">
+
+<!-- bootstrap css start  -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-theme.css">
+
+<!-- bootstrap css end  -->
+
+
+
+<!-- common css start  -->
+<link rel="stylesheet" href="css/style.css">
+<!-- common css end  -->
+
+<!-- specific for this page css start  -->
+
+<!-- specific for this page css start  -->
+
+
+<!-- important initialization js files start -->
+<script src="js/jquery-2.1.3.js"></script>
+<script src="js/nav.js"></script>
+<!-- important initialization js files end -->
+
+
+ 
+</head>
+<body>
+
+
+<div class="container mainContainer">
+	<div class="row containerRow">
+		<div class="row">
+			<div class="col-md-12 header-div">
+				<h2 class="brick-header">Add Unit</h2>
+			</div>
+		</div>
+		<div class="col-md-offset-1 col-md-10 registrationCol">
+				<div class="panel panel-default" id="registrationPanel">
+					<div class="panel-body">
+						<br><br><br>
+						<div class="row">
+							<h3 id="accountInformationHeader">UNIT NAME</h3>
+						</div>
+				
+				<form id="addCondoForm" class="form-horizontal">
+
+                <div class="form-group">
+          
+                        <div class="col-md-6 col-md-offset-3">
+                          <input type="text" class="form-control" id="condoNameInput" name="condoNameInput"> 
+                    </div>
+                    	 <label class="error-message-label col-md-offset-3 col-md-5" id="condoName_errorMessage" name="condoName_errorMessage">Error Message</label>
+              </div>
+
+
+              <br>
+              	<div class="row">
+							<h3 id="accountInformationHeader">UNIT PICTURE/S</h3>
+				</div>
+					<div class="col-md-12 fillerCol">filler</div>
+
+              <div class="col-md-12">
+              <div class="form-group">
+              		<div class="col-md-2  profilePicCol">
+              						<div class="col-md-12">
+									<img class="addCondoPic" id="addCondoPic1" name="addCondoPic2" src="test.png"/>
+									</div>
+									<div class="col-md-12 uploadBtnCol">
+										<span class="btn btn-default btn-file">
+											    Select<input type="file" id="condoPic1" name="condoPic1" onclick="preview(this)">
+											</span>
+									</div>
+					</div>
+
+					<div class="col-md-2    profilePicCol">
+              						<div class="col-md-12">
+									<img class="addCondoPic" id="addCondoPic2" name="addCondoPic2" src="test.png"/>
+									</div>
+									<div class="col-md-12 uploadBtnCol">
+										<span class="btn btn-default btn-file">
+											    Select<input type="file" id="condoPic2" name="condoPic2" onclick="preview(this)">
+											</span>
+									</div>
+					</div>
+
+						<div class="col-md-2    profilePicCol">
+              						<div class="col-md-12">
+									<img class="addCondoPic" id="addCondoPic3" name="addCondoPic3" src="test.png"/>
+									</div>
+									<div class="col-md-12 uploadBtnCol">
+										<span class="btn btn-default btn-file">
+											    Select<input type="file" id="condoPic3" name="condoPic3" onclick="preview(this)"/>
+											</span>
+									</div>
+					</div>
+
+					<!-- <div class="col-md-12 fillerCol">filler</div> -->
+
+						<div class=" col-md-2  profilePicCol">
+              						<div class="col-md-12">
+									<img class="addCondoPic" id="addCondoPic4" name="addCondoPic4" src="test.png"/>
+									</div>
+									<div class="col-md-12 uploadBtnCol">
+										<span class="btn btn-default btn-file">
+											    Select<input type="file" id="condoPic4" name="condoPic4" onclick="preview(this)"/>
+											</span>
+									</div>
+					</div>
+
+						<div class=" col-md-2  profilePicCol">
+              						<div class="col-md-12">
+									<img class="addCondoPic" id="addCondoPic5" name="addCondoPic5" src="test.png"/>
+									</div>
+									<div class="col-md-12 uploadBtnCol">
+										<span class="btn btn-default btn-file">
+											    Select<input type="file" id="condoPic5" name="condoPic5" onclick="preview(this)"/>
+											</span>
+									</div>
+					</div>
+
+						<div class=" col-md-2  profilePicCol">
+              						<div class="col-md-12">
+									<img class="addCondoPic" id="addCondoPic6" name="addCondoPic6" src="test.png"/>
+									</div>
+									<div class="col-md-12 uploadBtnCol">
+										<span class="btn btn-default btn-file">
+											    Select<input type="file" id="condoPic6" name="condoPic6" onclick="preview(this)"/>
+											</span>
+									</div>
+					</div>
+
+
+              </div>
+              </div>
+
+               
+				
+
+                <div class="form-group">
+                		<div class="col-md-12 fillerCol">filler</div> 	<div class="col-md-12 fillerCol">filler</div>
+              	<div class="row">
+							<h3 id="accountInformationHeader">UNIT INFORMATION</h3>
+				</div>
+					<div class="col-md-12 fillerCol">filler</div>
+
+                        <label class="control-label col-md-3 information-label" for="addressInput">Address:<span style="color:red">*</span></label>
+                        <div class="col-md-6">
+                          <textarea class="form-control" rows="2" id="addressInput" name="addressInput"></textarea>
+           
+                        
+                    </div>
+                     <label class="error-message-label col-md-offset-3 col-md-5" id="address_errorMessage" name="address_errorMessage">Error Message</label>
+              </div>
+
+
+               <div class="form-group ">
+                        <label class="control-label col-md-3 information-label" for="priceInput">Price:<span style="color:red">*</span></label>
+                        <div class="col-md-2">
+                              <label class="control-label col-md-6 information-label" for="priceInput">PHP</label> 
+                        </div>
+                        <div class="col-md-4">
+                          <input type="text" class="form-control" id="priceInput" name="priceInput">
+                    	</div>
+
+                          <label class="error-message-label col-md-offset-5 col-md-5" id="price_errorMessage" name="price_errorMessage">Error Message</label>
+              </div>
+
+              <div class="form-group">
+                        <label class="control-label col-md-3 information-label" for="roomAreaInput">Room Area:<span style="color:red">*</span></label>
+                        <div class="col-md-2">
+                          <input type="number" min="0" class="form-control" id="roomAreaInput" name="roomAreaInput">
+                        </div>
+                        <div class="col-md-3 label-row-left">
+                            <label class="control-label information-label" for="roomAreaInput">Sq. Meters</label>
+                        </div>
+                          <label class="error-message-label col-md-offset-3 col-md-5" id="area_errorMessage" name="area_errorMessage">Error Message</label>
+              </div>
+
+
+              <div class="form-group">
+                  <label class="control-label col-md-3 information-label" for="furnishingInput">Furnishing:</label>
+                  <div class="col-md-3">
+
+                              <select class="form-control" id="furnishingInput" name="furnishingInput">
+                                <option value="" disabled selected>- Select -</option>
+                                <option value="Furnished">Furnished</option>
+                                <option value="Semi-Furnished">Semi-Furnished</option>
+                                 <option value="Unfurnished">Unfurnished</option>
+                              </select>
+          
+                  </div>
+              </div>
+
+
+
+              <div class="form-group">
+                        <label class="control-label col-md-3 information-label" for="descriptionInput">Description:</label>
+                        <div class="col-md-6">
+                                <textarea class="form-control" rows="5" id="descriptionInput" name="descriptionInput"></textarea>
+                        </div>
+                     
+              </div>
+
+              <div id="contactNumberGroup">
+
+
+                    <div class="form-group">
+                           <label class="control-label col-md-3 information-label" for="contactNumberInput">Contact Number:<span style="color:red">*</span></label>
+                        <div class="col-md-6">
+                               <input type="text" class="form-control" id="contactNumberInput1" name="contactNumberInput1">
+                        </div>
+                         <label class="error-message-label col-md-offset-3 col-md-5" id="contactnumber1_errorMessage" name="contactnumber1_errorMessage">Error Message</label>
+                    </div>
+
+                     <div class="form-group">
+                              <label class="control-label col-md-offset-1 col-md-3 information-label" for="contactNumberInput">Type:</label>
+                           <div class="col-md-4">
+                              <select class="form-control" id="contactNumberTypeInput1" name="contactNumberTypeInput1">
+                                <option value="" disabled selected>- Select -</option>
+                                <option value="Moblie">Mobile</option>
+                                <option value="Home">Home</option>
+                                <option value="Office">Office</option>
+                                <option value="Fax">Fax</option>
+                              </select>
+                          </div>
+                     </div>
+
+
+                         <div class="form-group">
+              
+                        <div class="col-md-offset-3 col-md-6">
+                               <input type="text" class="form-control" id="contactNumberInput2" name="contactNumberInput2">
+                        </div>
+                               <label class="error-message-label col-md-offset-3 col-md-5" id="contactnumber2_errorMessage" name="contactnumber2_errorMessage">Error Message</label>
+                    </div>
+
+                     <div class="form-group">
+                              <label class="control-label col-md-offset-1 col-md-3 information-label" for="contactNumberInput">Type:</label>
+                           <div class="col-md-4">
+                              <select class="form-control" id="contactNumberTypeInput2" name="contactNumberTypeInput2">
+                                <option value="" disabled selected>- Select -</option>
+                                <option value="Moblie">Mobile</option>
+                                <option value="Home">Home</option>
+                                <option value="Office">Office</option>
+                                <option value="Fax">Fax</option>
+                              </select>
+                          </div>
+                     </div>
+
+          	<div class="col-md-12 fillerCol"> filler</div>
+
+            <div class="form-group">
+                <div class="col-md-12 button-row" id="addUnitButtonRow">       
+                	<button type="reset" id="canceltBtn" class="btn btn-default">Cancel</button>
+                     <button type="submit" id="addUnitBtn" class="btn btn-success">Add Unit</button>
+                </div>
+
+           </div>
+
+
+
+              </div>
+
+
+
+
+
+              </div>
+
+
+           
+              
+
+      
+
+ 
+
+
+
+
+        
+
+
+
+
+              </form>
+
+
+
+							</div>
+							
+					</div>
+
+				</div>
+		</div>
+	</div>
+
+</div>
+
+
+</body>
+
+<!-- js start -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/selectDate.js"></script>
+<script src="js/imgPreview.js"></script>
+<!-- js end -->
+
+
+</html>

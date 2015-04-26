@@ -1,0 +1,622 @@
+/*  --------------------------- GENERAL STYLE*/
+
+html{
+	visibility: hidden;
+}
+
+p, label, a{
+/*	font-family: roboto;*/
+font-family: sans-serif;
+word-wrap: break-word !important;
+}
+
+p{
+	word-wrap: break-word;
+}
+
+
+
+/*  --------------------------- CONTAINER and "CONTAINER" */
+body{
+	background-image: url("../images/brick.png");
+	width: 100%;
+	height: 100%;
+	/*background-color: grey;*/
+}
+
+.mainContainer{
+	padding-top: 180px;
+	
+}
+
+.rowContainer{
+
+}
+
+.t1{
+	background-color: yellow;
+}
+
+.t2{
+	background-color: green;
+}
+
+
+/* --------------------------- ERROR MESSAGE */
+.error-message-label{
+	color: red;
+	/*display: none;*/
+	
+}
+
+/* --------------------------- LABEL */
+ label, .output-label{
+ 	text-overflow: string;
+ }
+
+.output-label{
+	font-weight: bold;
+}
+
+/* --------------------------- PANEL */
+.panel-default>.panel-heading, .panel-default>.panel-footer{
+	background-color:  rgba(150, 40, 27, 0.95) !important;
+	background-image: none !important; 
+	border: 1px solid  rgba(150, 40, 27, 0.95)  !important;
+	color: white;
+	border-radius: 0px;
+}
+
+.panel-default>.panel-heading>.panel-title{
+	color:white;
+	text-align: left;
+}
+
+.panel-default{
+	border-color: rgba(150, 40, 27, 0.95) !important;
+	border-radius: 0px;
+    width: 100%;
+}
+
+
+.panel{
+/*	box-shadow: 0px 0px 0px 1.5px #ccc;*/
+	border-radius: 0px;
+}
+
+/* --------------------------- MODAL */
+.modal-content{
+		border-radius: 0px;	
+}
+
+/* --------------------------- NAV */
+
+.nav{
+  -webkit-backface-visibility: hidden;
+}
+
+.brand-nav{
+	background-image: url("../images/logo5.png");
+	background-size: 100% 100%;
+	background-repeat: none;
+	height: 150px;
+}
+
+.nav-ul-container{
+/*	background-color: black;*/
+	background-color: rgba(150, 40, 27, 1);
+	 opacity: 0.95;
+    filter: alpha(opacity=95);
+}
+
+#userMenuBtn{
+	width: 96px;
+	height: 50px;
+	background-image: none;
+	background-color: transparent;
+	border: 0px;
+}
+
+.navbar-nav li, #userMenuBtn{
+	color: white;
+}
+
+.dropdown-menu{
+	width: 200px;
+	text-align: left;
+	background-color:  rgba(150, 40, 27, 0.95) !important;
+}
+
+.dropdown-menu{
+	border: black;
+	border-radius: 0px;
+
+}
+
+.dropdown-menu li a{
+	color: white;
+	font-size: 14px;
+}
+
+.dropdown-menu li a:hover{
+	color: white;
+}
+
+#userMenuBtn{
+	width: 30px;
+	text-align: center;
+	outline:none;
+	border-radius: 0px;
+	border: 0.5px solid black;
+	background-image:  none;
+}
+
+ul li a{
+	color: white;
+}
+
+.nav-clickable a{
+	font-size: 16px;
+}
+
+
+ .nav-clickable a:hover{
+	  color: white;
+	  background-image: none !important;
+	  background-color: rgba(242, 38, 19, 0.8) !important;
+}
+
+.nav-clickable a:focus{
+	  color: white;
+	  background-image: none !important;
+	  background-color: rgba(242, 38, 19, 0.8) !important;
+}
+
+
+
+.caret{
+	text-align: right;
+}
+
+#usersName:hover, #usersName:focus{
+	text-decoration: none;
+	color:white;
+}
+
+.btn{
+	border-radius: 0px;
+}
+
+#navSignInBtnLi{
+   width: 89px;
+   height: 50px;
+   padding-top: 8px;	
+}
+
+#welcomeLabel{
+	font-weight: normal;
+}
+
+#welcomeLabel a{
+	font-weight: bold !important;
+}
+
+.logged-in-feature{
+	/*display: none !important;*/
+}
+
+/*-----------
+----------------- CAROUSEL */
+
+.carousel-caption{
+	font-size: 50px;
+	text-align: center;
+}
+
+#carousel-example-generic{
+	height: 400px !important;
+	width: 100%;
+}
+
+.carousel-img{
+width: 100% !important;
+height: 400px !important;
+}
+
+#featuredGroup{
+/*	background-color: rgba(248, 148, 6, 1);*/
+	padding-bottom: 20px;
+}
+
+#featuredGroup h2, h1{
+	color: white;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#featuredGroup .carousel{
+	/*text-align: center;*/
+}
+
+
+
+/* ----------------------------- NEWEST CONDOs */
+
+/*.newCondoPanelDiv{
+	height: 600px;
+
+}*/
+
+.newCondoPanelDiv .panel .panel-heading .panel-title{
+	text-align: center;
+}
+
+.newCondoPanelDiv .panel .panel-heading, .newCondoPanelDiv .panel .panel-footer 
+{
+	background-color: rgba(150, 40, 27, 1);
+
+}
+
+.newCondoPanelDiv .panel{
+	/*border: 10px solid rgba(242, 38, 19, 1) !important;*/
+	border-image: url(wood.jpg) 27 27 27 27 round round;
+
+}
+
+.newCondoPanelDiv .panel:hover{
+	box-shadow: 0px 0px 15px white;
+}
+
+.newCondoPanelDiv .panel .panel-body{
+	text-align: center;
+	background-color: rgba(236,236,236,1);
+	min-height: 370px;
+	max-height: 370px;
+	overflow: hidden;
+}
+
+/*.newCondoPanelDiv .panel .panel-body p{
+
+}*/
+
+.newCondoPrice{
+	color: white;
+	text-align: center;	
+	width: 100%;
+}
+
+.newCondoDisplayImg{
+	width: 150px;
+	height: 150px;
+}
+
+#newestCondosRow h2{
+	color: white;
+}
+
+.newCondoDescriptionCol{
+	max-height: 300px;
+}
+
+
+/*.newCondoDescriptionCol p{
+	height: 100%;
+}*/
+
+.fillerCol{
+	visibility: hidden;
+}
+
+.invisible{
+	visibility: hidden;
+}
+
+.newCondoDescriptionCol{
+	word-wrap: break-word;
+	color: black;
+}
+
+.newCondoDivPanelA{
+	text-decoration: none;
+}
+
+/* ------------------------------ WELCOME ROW */
+#welcomeRow{
+	text-align: center;
+	color: white;
+}
+
+/* --------------------------- MODALS */
+
+#signInModal .modal-dialog .modal-header{
+	background-color: rgba(150, 40, 27, 0.80) !important;
+	background-image: none !important; 
+	color: white;
+}
+
+/* ----------------------------- BUTTONS */
+.button-row{
+	text-align: center;
+}
+
+.btn-success{
+	background-color:  rgba(242, 38, 19, 1) !important;
+	background-image: none !important; 
+	border: 1px solid rgba(242, 38, 19, 1) !important;
+
+}
+
+.btn-file {
+	margin-top: 2px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.uploadBtnCol{
+	text-align: center;
+	max-width: 200px;
+}
+
+/* --------------------------------- header */
+.header-div{
+	text-align: center;
+}
+
+
+/*------------------------------ registration */
+.containerRow{
+	/*text-align: center; */
+}
+
+#registrationPanel{
+		background-image: url("../images/document.png");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		min-height: 900px;
+}
+
+#accountInformationHeader{
+	text-decoration: underline;
+	text-align: center;
+}
+
+
+
+#registrationPic{
+	/*width: 100%;*/
+	height: 200px;
+	/*max-width: 200px;*/
+}
+
+/*.profilePicCol{
+	text-align: center;
+}*/
+
+.birthdayInputs{
+	padding-left: 0px !important;
+}
+
+.button-row{
+	text-align: center;
+}
+
+/*#registerBtn{
+	height: 50px;
+	width: 100px;
+}*/
+
+/* ---------------- view unit or profile */
+
+.viewUnitOrProfilePanel{
+	background-color: transparent;
+	border: 0px;
+}
+
+.viewUnitOrProfilePanel, .viewUnitOrProfilePanel>.panel-heading, .viewUnitOrProfilePanel>.panel-footer{
+	border: 10px solid  rgba(150, 40, 27, 0.95)  !important !important;
+	border-radius: 0px;
+	height: 50px;
+}
+
+.viewUnitOrProfilePanel .profileBody{
+	width: 90%;
+	margin: 0 auto;
+	background-color:  white !important;
+	border-left: 50px solid rgba(150, 40, 27, 0.95);
+	border-right: 50px solid rgba(150, 40, 27, 0.95);
+	padding-top: 0px;
+}
+
+.dividerCol{
+	background-color: rgba(150, 40, 27, 0.95);
+	height: 20px;
+}
+
+.breadcrumb{
+	border-radius: 0px;
+	background-color: rgba(150, 40, 27, 0.95);
+
+}
+
+.titleCol h2{
+
+	text-align: center;
+}
+
+#profileUsersName{
+	font-size: 25px;
+	color: black;
+}
+
+.profileLabel{
+	font-size: 16px;
+	font-weight: normal;
+	color: black;
+}
+
+
+
+.empty-message{
+	font-size: 15px;
+	font-weight: bold;
+/*	color: rgb(236, 240, 241)*/;
+	color: black;
+	text-align: center;
+	display: inline;
+}
+
+.empty-message-white{
+	font-size: 15px;
+	font-weight: bold;
+/*	color: rgb(236, 240, 241)*/;
+	color: white;
+	text-align: center;
+	display: inline;
+}
+
+
+.userProfileCommentsRowHeader{
+	color: white;
+}
+
+.commentCondoLabel{
+	color: black; 
+}
+
+.commentCondoLabel a{
+	text-decoration: none;
+	color: black;
+}
+
+.commentCondoP{
+	color: black;
+}
+
+.commentCol{
+	display: inline;
+}
+
+.seeMoreCol{
+	text-align: right;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.seeMoreCol a{
+		color: white;
+}
+
+.hideBtn, .seeMoreBtn{
+	background-color: transparent !important;
+	border: 0px !important;
+	background-image: none !important;
+	color: black;
+}
+
+.hideBtn:hover, .seeMoreBtn:hover{
+	color: black;
+}
+
+.hideBtn:focus, .seeMoreBtn:focus{
+	border: 0px transparent;
+	color: black
+}
+
+.postedCondoBody:hover{
+		box-shadow: 0px 0px 15px grey;
+}
+
+.addCondoPic{
+	height: 100px;
+	width: 100%;
+}
+
+.uploadBtnCol{
+	text-align: center;
+}
+
+.accountInformationHeader h3{
+	color: black !important;
+}
+
+.brick-header{
+	color: white;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.mainPic{
+	width: 200px;
+	height: 180px; 
+}
+
+.subPic{
+	width: 140px;
+	height: 110px; 
+}
+
+
+
+
+/* ------------------------------ view condo */
+#unitInfoList {	
+	list-style-type:  none !important;
+}
+
+/* -------------------------- SEARCH */
+
+.searchCol{
+	height: 500px;
+/*	background-image: url("../images/board.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;*/
+	background-color: white;
+}
+
+.filteredSearchBtnCol{
+	text-align: center;
+}
+
+/*#searchResultsLabel{
+	font-size: 30px !important;
+}*/
+
+.priceRangeInput{
+	width: 100px;
+}
+
+.resultCondoDisplayImg{
+	width: 100%;
+	border: 10px solid rgba(150, 40, 27, 0.80);
+}
+
+.searchCol{
+	box-shadow: 0px 0px 30px yellow; 
+}
+
+.board-pillar{
+	width: 50%;
+	height: 100px;
+	border-left: 40px solid grey;
+	border-right: 40px solid grey;
+}
+
+.searchResultsRow {
+	background-image: url("../images/brick.png");
+	width: 100%;
+	height: 100%;
+}
